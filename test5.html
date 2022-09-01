@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <script>
+        fetch('https://devadmin.casamelhor.in/api/v1/account/login/', {
+          method: 'POST',
+          headers: {
+            'Authorization': 'Basic ZGV2dXNlcjpkZXYyMDIydXNlcg=='
+          },
+          body: JSON.stringify({'phone_or_email': 'serveradmin@sapnagroup.com', 'password': 'Admin&123456'})
+        }).then(res => res.json())
+          .then(res => console.log(res));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
